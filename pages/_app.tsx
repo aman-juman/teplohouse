@@ -3,6 +3,7 @@ import Head from "next/head";
 import { AppProps } from "next/dist/shared/lib/router/router";
 import "../styles/globals.scss";
 import {Header} from "../components";
+import "../styles/burger.css";
 
 export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
   return (

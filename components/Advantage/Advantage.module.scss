@@ -1,0 +1,18 @@
+.wrap{
+  background: var(--semiWhite);
+}
+.content{
+  height: 100vh;
+  padding: 50px;
+  text-align: center;
+
+  .title{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+  }
+  .items{
+    display: flex;
+    justify-content: space-between;
+  }
+}

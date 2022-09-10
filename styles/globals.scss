@@ -36,7 +36,7 @@ a {
 	--gray: #25303c;
 	--grayLight: #909fb0;
 	--yellow: #FBB716;
-	--white: #FFFFFF;
+	--white: #fffdfd;
 	--semiWhite: #e6e4e4;
 	--black: #000000;
 	--swiper-theme-color: #000;
@@ -52,4 +52,8 @@ a {
 		color: white;
 		background: black;
 	}
+}
+.app{
+	height: 100vh;
+	background-color: #FBB716;
 }

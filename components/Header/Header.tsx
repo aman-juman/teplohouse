@@ -19,7 +19,8 @@ export const Header = () =>{
                         className={styles.logo}
                         width={150}
                         height={150}
-                    /></div>
+                    />
+                </div>
                 <span className={styles.phone}>+7777777777</span></div>
         </header>
     );

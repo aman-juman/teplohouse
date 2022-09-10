@@ -2,7 +2,7 @@ import React from 'react';
 import {elastic as BurgerMenu} from "react-burger-menu";
 
 
-export default props => {
+const Menu =(props) => {
     return (
         <BurgerMenu {...props}>
             <a className="menu-item" href="#">
@@ -26,3 +26,4 @@ export default props => {
         </BurgerMenu>
     );
 };
+export default Menu;

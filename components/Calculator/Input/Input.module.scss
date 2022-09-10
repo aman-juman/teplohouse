@@ -1,0 +1,21 @@
+.wrap{
+  display: flex;
+  flex-direction: column;
+.label{
+  margin-bottom: 3px;
+}
+  .input{
+    max-width: 300px;
+    width: 100%;
+
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border: none;
+    background: var(--semiWhite);
+    padding: 10px;
+    &:focus{
+      outline:none;
+    }
+  }
+}

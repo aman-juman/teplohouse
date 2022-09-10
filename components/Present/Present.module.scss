@@ -1,0 +1,93 @@
+.section {
+  background: url("./images/background.jpg");
+  background-size: cover;
+  width: 100vw;
+  //height: calc(100vh - 70px);
+}
+
+.wrap {
+  display: flex;
+  height: calc(100vh - 70px);
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(90deg, rgba(248, 248, 248, 0) 0%, rgba(77, 75, 75, 0.05) 50%, rgba(77, 75, 75, 0.2) 100%);
+
+}
+.swiper{
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  width: 400px;
+  position: relative;
+  .imgWrap{
+    transition: all 0.4s ease-in-out;
+  }
+  .arrow{
+    width: 30px;
+    height: 30px;
+    background: var(--gray);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+
+  }
+  .arrowLeft{
+    transform: rotate(180deg);
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    &:hover{
+      transform: scale(1.2) rotate(180deg);
+    }
+  }
+  .arrowRight{
+    position: absolute;
+    top: 8rem;
+    right: 0;
+    &:hover{
+      transform: scale(1.2);
+    }
+  }
+}
+
+.description {
+  width: 400px;
+  color: var(--white);
+  //background: rgba(37, 48, 60, 0.15);
+  padding: 0 10px;
+
+  .title {
+    font-weight: bold;
+    font-size: 28px;
+  }
+
+  .subTitle {
+    font-size: 18px;
+  }
+
+  .btnLink {
+    cursor: pointer;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background: var(--gray);
+    color: var(--white);
+    transition: all 0.4s ease-in-out;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    &:hover{
+      background: rgba(22, 28, 35, 0.8);
+      color: var(--yellow);
+    }
+
+  }
+}

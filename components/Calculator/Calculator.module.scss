@@ -1,0 +1,20 @@
+.wrap{
+  width: 500px;
+  box-shadow: 0 5px 5px var(--grayLight);
+  margin: 150px;
+}
+.content{
+  padding: 30px;
+  .calc{
+   .top{
+     .title{
+       font-size: 20px;
+       text-align: center;
+       margin-bottom: 20px;
+     }
+     .option{
+
+     }
+   }
+  }
+}

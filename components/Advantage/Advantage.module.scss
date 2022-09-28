@@ -1,8 +1,9 @@
+@import "../../styles/screen";
 .wrap{
   background: var(--semiWhite);
 }
 .content{
-  height: 100vh;
+  height: 100%;
   padding: 50px;
   text-align: center;
 
@@ -10,9 +11,26 @@
     font-size: 40px;
     font-weight: 600;
     margin-bottom: 70px;
+    @include medium{
+      font-size: 32px;
+    }
+    @include mobile{
+      font-size: 24px;
+    }
   }
   .items{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
+    gap: 40px;
+
+    @include large{
+      grid-template-columns: repeat(2, minmax(250px, 350px));
+      justify-content: center;
+    }
+    @include tablet{
+      grid-template-columns: minmax(250px, 350px);
+    }
+
   }
 }

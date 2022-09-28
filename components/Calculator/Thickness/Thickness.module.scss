@@ -1,5 +1,6 @@
 .wrap{
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   .title{
     font-size: 14px;
@@ -27,8 +28,9 @@
       }
     }
     .selected{
-      background: var(--gray);
-      color: var(--white);
+      background: var(--yellow);
+      border: none;
+      color: var(--black);
     }
   }
 }

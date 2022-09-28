@@ -3,6 +3,9 @@ import styles from "./Advantage.module.scss";
 import img1 from "./advantage1.png";
 import img2 from "./advantage2.png";
 import img3 from "./advantage3.png";
+import img4 from "./advantage4.png";
+import img5 from "./advantage5.png";
+import img6 from "./advantage6.png";
 import {AdvantageItem} from "./AdvantageItem/AdvantageItem";
 
 export const Advantage = () => {
@@ -21,6 +24,21 @@ export const Advantage = () => {
             icon: img3,
             title: "Работаем с Вами",
             description: "Нашими клиентами являются и физлица и организации. Обслуживаем заказы от одного килограмма до тысяч кубометров продукции."
+        },
+        {
+            icon: img4,
+            title: "Расчёт материалов",
+            description: "Наш специалист задаст Вам несколько простых вопросов и в короткие сроки предоставит вам бесплатный расчёт материалов."
+        },
+        {
+            icon: img5,
+            title: "Энергосбережение",
+            description: "Основным назначением нашей продукции является тепло- и энергосбережение, направление, которое набирает популярность у покупателей."
+        },
+        {
+            icon: img6,
+            title: "Экологичность",
+            description: "При производстве продукции используется пенопласт пищевого стандарта. Не горюч, не токсичен, не подвержен химическому и биологическому разложению."
         },
 
     ];

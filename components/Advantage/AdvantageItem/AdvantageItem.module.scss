@@ -1,12 +1,10 @@
 .wrap{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  padding: 30px;
   border-radius: 10px;
-  width: 350px;
   text-align: center;
   background: var(--white);
   box-shadow: 0 20px 20px rgba(0, 0, 0, 0.07);
-  padding: 30px;
 }
 .icon{
 

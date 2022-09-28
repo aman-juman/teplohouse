@@ -15,13 +15,14 @@ export const Calculator = () => {
     const [thickness, setThickness] = useState(3);
     const [windows, setWindows] = useState(0);
 
+
     return (
-        <div className={styles.wrap}>
+        <div onClick={(e) => e.stopPropagation()} className={styles.wrap}>
             <div className={styles.content}>
                 <div className={styles.calc}>
                     <div className={styles.top}>
                         <h3 className={styles.title}>Расчет утепления дома теплофасадом</h3>
-                        <Thickness thickness={thickness} setThickness={setThickness} />
+                        <Thickness thickness={thickness} setThickness={setThickness}/>
                         <div className={styles.option}>
                             <Input title="Длина дома" value={length} setValue={setLength}/>
                             <Input title="Ширина дома" value={width} setValue={setWidth}/>
@@ -34,6 +35,11 @@ export const Calculator = () => {
                             <Result height={height} width={width} length={length} windows={windows}
                                     thickness={thickness}/>
                         </div>
+                        <a href={`https://wa.me/77014048686?text=Здравствуйте!%20Меня%20интересует%20Термопанели%20для%20утепления%20дома.%20Мои%20данные:%20Длина-${length};%20Ширина-${width};%20Высота-${height};%20Кол-окон/двери-${windows};`}>
+                            <button className={styles.submitBtn}>Отправить
+                                заявку
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

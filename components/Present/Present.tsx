@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Present.module.scss";
-import ArrowIcon from "./images/arrow.svg";
 import Img1 from "./images/block1.png";
 import Img2 from "./images/block2.png";
 import Img3 from "./images/block3.png";
@@ -19,14 +18,14 @@ export const Present = () => {
 
     return (
         <section className={styles.section}>
+            <video className={styles.video} autoPlay muted loop >
+                <source src="/background2.mp4"/>
+            </video>
             <div className="container">
                 <div className={styles.wrap}>
                     <div className={styles.content}>
                         <div className={styles.slider}>
                             <Slider />
-                            {/*<div className={styles.imgWrap}><Image src={BlockImage} width={300} height={280} alt="блоки"/></div>*/}
-                            {/*<div className={cn(styles.arrow, styles.arrowLeft)}><ArrowIcon /></div>*/}
-                            {/*<div className={cn(styles.arrow, styles.arrowRight)}><ArrowIcon /></div>*/}
                         </div>
                         <div className={styles.description}>
                             <h3 className={styles.title}>

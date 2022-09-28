@@ -1,10 +1,10 @@
 .wrap{
-  margin: 100px;
-  width: 300px;
-  height: 530px;
-  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.07);
+  width: 280px;
+  height: 470px;
+  box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
   padding: 25px;
   transition: all 0.4s ease-in-out;
+  margin: 20px 0;
   &:hover{
     transform: scale(1.1);
   }
@@ -51,8 +51,8 @@
     }
   }
   .active{
-    color: var(--white);
-    background: var(--gray);
+    color: var(--gray);
+    background: var(--yellow);
     border: none;
   }
 
@@ -67,12 +67,12 @@
     height: 50px;
     width: 120px;
     border-radius: 30px;
-    color: var(--white);
+    color: var(--gray);
     font-size: 16px;
     font-weight: 500;
     padding: 5px 10px;
     border: none;
-    background: var(--gray);
+    background: var(--yellow);
     cursor: pointer;
     &:hover{
       opacity: 0.9;

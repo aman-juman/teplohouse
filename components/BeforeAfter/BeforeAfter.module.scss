@@ -1,5 +1,37 @@
+@import "../../styles/screen";
 .mainWrapper {
   width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  @include medium{
+    margin-top: 40px;
+  }
+  @include mobile{
+    margin-top: 25px;
+  }
+  h3{
+    font-size: 36px;
+    font-weight: 700;
+    @include medium{
+      font-size: 30px;
+    }
+    @include mobile{
+      font-size: 24px;
+      font-weight: 600;
+    }
+  }
+  h5{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 20px 0 50px;
+    @include medium{
+      font-size: 14px;
+    }
+    @include mobile{
+      font-size: 12px;
+      margin: 10px 0;
+    }
+  }
 
 }
 

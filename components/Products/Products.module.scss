@@ -1,0 +1,76 @@
+@import "../../styles/screen";
+.wrap{
+  padding: 30px 0;
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+
+  .title{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .variants{
+    display: flex;
+    margin-top: 50px;
+    text-align: center;
+
+    .variant{
+      &:first-child{
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-right: none;
+      }
+      &:last-child{
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-left: none;
+      }
+
+      margin: 0;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 10px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      border: 3px solid var(--yellowLight);
+      color: var(--grayLight);
+
+
+      &:hover{
+        color: var(--yellow);
+      }
+
+
+    }
+    .selected{
+      color: var(--white);
+      background: var(--yellow);
+      transition: all 0.4s ease-in-out;
+      border: 3px solid var(--yellow);
+      &:hover{
+        color: var(--gray);
+      }
+    }
+  }
+
+  .productList{
+    justify-items: center;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 100px 0;
+    @include tablet{
+      //grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+
+
+}
+

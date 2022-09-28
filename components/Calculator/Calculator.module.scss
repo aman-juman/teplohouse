@@ -1,20 +1,38 @@
-.wrap{
-  width: 500px;
+.wrap {
+  max-width: 500px;
+  width: 100%;
   box-shadow: 0 5px 5px var(--grayLight);
-  margin: 150px;
+  display: flex;
+  justify-content: center;
+  background-color: #fffdfd;
 }
-.content{
-  padding: 30px;
-  .calc{
-   .top{
-     .title{
-       font-size: 20px;
-       text-align: center;
-       margin-bottom: 20px;
-     }
-     .option{
 
-     }
-   }
+.content {
+  padding: 30px;
+
+  .calc {
+    .top {
+      .title {
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .option {
+
+      }
+    }
+
   }
+}
+.submitBtn{
+  margin: 20px 0;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: var(--yellow);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gray);
+  cursor: pointer;
 }
